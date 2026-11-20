@@ -1,0 +1,11 @@
+{
+  "name": "deepadharshini-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install --prefix server && npm install --prefix client",
+    "build": "npm run install-all && npm run build --prefix client",
+    "start": "npm start --prefix server",
+    "seed": "npm run seed --prefix server"
+  }
+}

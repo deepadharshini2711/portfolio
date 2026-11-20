@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: deepadharshini-portfolio
+    runtime: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: ADMIN_KEY
+        generateValue: true
